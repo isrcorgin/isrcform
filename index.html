@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Google Form</title>
+  <style>
+    /* CSS for responsive iframe */
+    .google-form-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; /* Aspect ratio 16:9 (9 / 16 * 100%) */
+    }
+    .google-form-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="google-form-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvw89yDFj4dphW9sOyIuKHnDAoqe9b0HbHNQ7n6kH2VmXkRQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</body>
+</html>
